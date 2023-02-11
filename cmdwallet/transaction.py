@@ -1,4 +1,4 @@
-from ed25519_blake2b import SigningKey
+from ed25519 import SigningKey
 from binascii import hexlify, unhexlify
 from hashlib import sha256
 

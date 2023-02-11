@@ -1,4 +1,4 @@
-from ed25519_blake2b import SigningKey, VerifyingKey, BadSignatureError
+from ed25519 import SigningKey, VerifyingKey, BadSignatureError
 from binascii import hexlify, unhexlify
 from hashlib import sha256
 

@@ -1,6 +1,6 @@
 from hashlib import blake2b
 import random
-from ed25519_blake2b import SigningKey
+from ed25519 import SigningKey
 from hashlib import sha256
 from binascii import hexlify, unhexlify
 

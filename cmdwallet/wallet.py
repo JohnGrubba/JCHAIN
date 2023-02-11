@@ -15,8 +15,10 @@ async def start():
 
         trs = Transaction(acc.public_key, acc1.public_key, 10, acc.private_key)
         print(trs.json())
-        await websocket.send(json.dumps(trs.json()))
-        print(await websocket.recv())
+        trss = trs.json()
+        await websocket.send(json.dumps(trss))
+        while True:
+            print(await websocket.recv())
 
 
 asyncio.run(start())
